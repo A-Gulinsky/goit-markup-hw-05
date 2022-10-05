@@ -327,6 +327,33 @@ ul {
   text-align: center;
 }
 
+.work-box {
+  position: relative;
+}
+
+.work-inner-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  text-align: center;
+  
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.inner-text {
+  padding-bottom: 27px;
+  padding-top: 27px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  color: var(--additional-text-color);
+  text-transform: uppercase;
+}
+
 /* Команда */
 .team-list {
   display: flex;
