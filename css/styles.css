@@ -143,6 +143,23 @@ ul {
   color: var(--interactive-text-color);
 }
 
+
+.nav-list .link {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: var(--interactive-text-color);
+}
+
 /* Контактна інформація */
 
 .info-list {
@@ -573,6 +590,52 @@ text-align: center;
   border-bottom: 1px solid var(--card-border-color);
 }
 
+/* Розмітка ховера на картку */
+
+.card-box {
+  position: relative;
+}
+
+.card-box::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+opacity: 0;
+}
+
+.card-inner-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+  opacity: 0;
+}
+
+.card-inner-text {
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--additional-text-color);
+}
+
+.portfolio-link:hover .card-inner-box,
+.portfolio-link:focus .card-inner-box {
+  opacity: 1;
+}
+
+.portfolio-link:hover .card-box::before,
+.portfolio-link:focus .card-box::before {   
+  opacity: 1;
+}
+/* ---------------------------- */
 .portfolio-link {
   display: block;
   text-decoration: none;
