@@ -132,6 +132,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .link:hover,
@@ -188,6 +192,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .info-contact:hover,
@@ -266,6 +274,10 @@ ul {
   border: 1px solid transparent;
 
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-btn:hover,
@@ -444,6 +456,10 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list {
@@ -458,6 +474,10 @@ ul {
   fill: var(--border-clients-static);
   width: 20px;
   height: 20px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
@@ -503,6 +523,10 @@ text-align: center;
   border-radius: 4px;
   border: 1px solid var(--border-clients-static);
   fill: var(--border-clients-static);
+
+  transition-property: border , fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -545,6 +569,10 @@ text-align: center;
   background-color: var(--team-bg-color);
 
   cursor: pointer;
+
+  transition-property: background-color , color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list .btn:hover,
@@ -594,6 +622,7 @@ text-align: center;
 
 .card-box {
   position: relative;
+  overflow: hidden;
 }
 
 .card-box::before {
@@ -602,43 +631,58 @@ text-align: center;
   width: 100%;
   height: 100%;
 
-  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
 
-opacity: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-inner-box {
   position: absolute;
   width: 100%;
   height: 100%;
-   top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
 
   opacity: 0;
+
 }
 
 .card-inner-text {
   padding: 63px 24px;
-
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.55;  
   color: var(--additional-text-color);
+
 }
 
 .portfolio-link:hover .card-inner-box,
 .portfolio-link:focus .card-inner-box {
   opacity: 1;
+
 }
 
-.portfolio-link:hover .card-box::before,
-.portfolio-link:focus .card-box::before {   
+.portfolio-link:hover .card-box::before {
   opacity: 1;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* ---------------------------- */
+
 .portfolio-link {
   display: block;
   text-decoration: none;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -708,6 +752,10 @@ opacity: 0;
   letter-spacing: 0.03em;
   color: var(--footer-text-contact);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address {
@@ -751,6 +799,10 @@ opacity: 0;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-list {
