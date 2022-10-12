@@ -162,6 +162,8 @@ ul {
   border-radius: 2px;
 
   background-color: var(--interactive-text-color);
+
+  transform: translateY(1px);
 }
 
 /* Контактна інформація */
@@ -194,7 +196,7 @@ ul {
   text-decoration: none;
 
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
@@ -208,17 +210,9 @@ ul {
   fill: currentColor;
 }
 
-.info-contact:hover .info-envelope {
-  fill: var(--interactive-text-color);
-}
-
 .info-smartphone {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.info-contact:hover .info-smartphone {
-  fill: var(--interactive-text-color);
 }
 
 /* -----СТУДІЯ----- */
@@ -457,7 +451,7 @@ ul {
   height: 44px;
   border-radius: 50%;
 
-  transition-property: background-color ;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -488,7 +482,7 @@ ul {
 .icon-link:hover .team-svg,
 .icon-link:focus .team-svg {
   fill: var(--additional-text-color);
-}
+} 
 
 /* Наші клієнти */
 
@@ -829,10 +823,6 @@ text-align: center;
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
